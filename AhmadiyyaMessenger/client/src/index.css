@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 230 7% 25%; /* discord-bg */
+  --foreground: 0 0% 100%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 225 4% 74%; /* discord-lightgray */
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 228 6% 21%; /* discord-darkbg */
+  --card-foreground: 0 0% 100%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 235 86% 65%; /* discord-blurple */
+  --primary-foreground: 0 0% 100%;
+  --secondary: 60 4.8% 95.9%;
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 60 4.8% 95.9%;
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%; /* discord-red */
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+  
+  /* Discord Theme Colors */
+  --discord-blurple: 235 86% 65%;
+  --discord-green: 152 51% 37%;
+  --discord-bg: 230 7% 25%;
+  --discord-darkbg: 228 6% 21%;
+  --discord-lightgray: 225 4% 74%;
+  --discord-blue: 196 100% 48%;
+  --discord-red: 0 84% 60%;
+  --discord-darkest: 220 8% 14%;
+  
+  /* Chart Colors */
+  --chart-1: var(--discord-blurple);
+  --chart-2: var(--discord-green);
+  --chart-3: var(--discord-blue);
+  --chart-4: var(--discord-red);
+  --chart-5: 40 96% 64%;
+  
+  /* Sidebar Colors */
+  --sidebar-background: 220 8% 14%;
+  --sidebar-foreground: 0 0% 100%;
+  --sidebar-primary: 235 86% 65%;
+  --sidebar-primary-foreground: 0 0% 100%;
+  --sidebar-accent: 228 6% 21%;
+  --sidebar-accent-foreground: 225 4% 74%;
+  --sidebar-border: 228 6% 16%;
+  --sidebar-ring: 235 86% 65%;
+}
+
+.dark {
+  --background: 230 7% 25%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 228 6% 21%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 235 86% 65%;
+  --primary-foreground: 0 0% 98%;
+  --secondary: 240 3.7% 15.9%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 240 3.7% 15.9%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Open Sans', 'Whitney', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+  }
+}
